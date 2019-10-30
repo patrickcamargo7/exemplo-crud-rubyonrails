@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row justify-content-center  d-flex align-items-center align-items-center">
+    <div class="col-lg-5">
+      <div class="card mt-5">
+          <div class="card-body">
+            <h5 class="card-title">Visualizar Pessoa</h5>
+            <p id="notice"><%= notice %></p>
+
+            <p>
+              <strong>Nome:</strong>
+              <%= @pessoa.nome %>
+            </p>
+
+            <p>
+              <strong>Ano nascimento:</strong>
+              <%= @pessoa.ano_nascimento %>
+            </p>
+
+            <p>
+              <strong>Sobre:</strong>
+              <%= @pessoa.sobre %>
+            </p>
+
+            <%= link_to 'Editar', edit_pessoa_path(@pessoa) %> |
+            <%= link_to 'Voltar', pessoas_path %>
+
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
